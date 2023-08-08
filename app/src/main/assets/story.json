@@ -1,0 +1,30 @@
+
+{
+  "chapters": [
+    {
+      "chapterNumber": 1,
+      "chapterTitle": "Chapter 1: The Beginning",
+      "chapterText": "Once upon a time..."
+    },
+    {
+      "chapterNumber": 2,
+      "chapterTitle": "Chapter 2: The Adventure",
+      "chapterText": "As the hero set off on an adventure..."
+    },
+    {
+      "chapterNumber": 3,
+      "chapterTitle": "Chapter 3: The Encounter",
+      "chapterText": "In the dark forest, the hero encountered..."
+    },
+    {
+      "chapterNumber": 4,
+      "chapterTitle": "Chapter 4: The Decision",
+      "chapterText": "Faced with a tough decision, the hero..."
+    },
+    {
+      "chapterNumber": 5,
+      "chapterTitle": "Chapter 5: The Showdown",
+      "chapterText": "In the final showdown..."
+    }
+  ]
+}

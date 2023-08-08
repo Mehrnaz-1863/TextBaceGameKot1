@@ -1,0 +1,18 @@
+{
+  "about": {
+    "aboutTitle_tv": "About the game",
+    "aboutText_tv": "You Are In about page or screen"
+  },
+  "setting": {
+    "settingTitle_tv": "Setting",
+    "settings_btn_back": "Back"
+  },
+  "mainMenu": {
+    "menuTitle_tv": "Welcome, ",
+    "newGame_btn": "New Game",
+    "continue_btn": "Continue",
+    "about_btn": "About",
+    "exitGame_btn": "Exit Game",
+    "settings_btn": "Setting"
+  }
+}

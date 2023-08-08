@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".SettingsActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/settings_background" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#2CFFFFFF"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
+
+
+    <TextView
+        android:id="@+id/settings_tv_font_title"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="500dp"
+        android:background="#4DFFFFFF"
+        android:gravity="center"
+        android:text="Change Font Size"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="@id/backButton"
+        app:layout_constraintTop_toBottomOf="@id/backButton" />
+
+    <TextView
+        android:id="@+id/settings_tv_size_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:background="#4DFFFFFF"
+        android:gravity="center"
+        android:text="16sp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_tv_font_title"
+        app:layout_constraintStart_toEndOf="@+id/settings_tv_font_title"
+        app:layout_constraintTop_toTopOf="@+id/settings_tv_font_title"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/settings_tv_size_2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:background="#4DFFFFFF"
+        android:gravity="center"
+        android:text="20sp"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_tv_size_1"
+        app:layout_constraintStart_toEndOf="@+id/settings_tv_size_1"
+        app:layout_constraintTop_toTopOf="@+id/settings_tv_size_1" />
+
+    <TextView
+        android:id="@+id/settings_tv_size_3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:background="#4DFFFFFF"
+        android:gravity="center"
+        android:text="24sp"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_tv_size_2"
+        app:layout_constraintStart_toEndOf="@+id/settings_tv_size_2"
+        app:layout_constraintTop_toTopOf="@+id/settings_tv_size_2" />
+
+    <LinearLayout
+        android:id="@+id/settings_ll_font"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/settings_tv_size_3"
+        app:layout_constraintStart_toStartOf="@+id/settings_tv_font_title"
+        app:layout_constraintTop_toBottomOf="@+id/settings_tv_font_title">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#4DFFFFFF"
+            android:gravity="center"
+            android:text="Font Style"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/settings_tv_font1"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="#4DFFFFFF"
+            android:gravity="center"
+            android:src="@drawable/ic_stop"
+            android:text="Font 1"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/settings_tv_font2"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="#4DFFFFFF"
+            android:gravity="center"
+            android:src="@drawable/ic_play"
+            android:text="Font 2"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/settings_tv_font3"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:background="#4DFFFFFF"
+            android:gravity="center"
+            android:src="@drawable/ic_next"
+            android:text="Font 3"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_ll_music"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/settings_ll_font"
+        app:layout_constraintStart_toStartOf="@+id/settings_ll_font"
+        app:layout_constraintTop_toBottomOf="@+id/settings_ll_font">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:background="#4DFFFFFF"
+            android:gravity="center"
+            android:text="Music"
+            android:textColor="#fff" />
+
+        <ImageView
+            android:id="@+id/settings_img_stop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="#4DFFFFFF"
+            android:contentDescription="Stop"
+            android:src="@drawable/ic_stop" />
+
+        <ImageView
+            android:id="@+id/settings_img_play"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="#4DFFFFFF"
+            android:contentDescription="Play"
+            android:src="@drawable/ic_play" />
+
+        <ImageView
+            android:id="@+id/settings_img_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:background="#4DFFFFFF"
+            android:contentDescription="Next"
+            android:src="@drawable/ic_next" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

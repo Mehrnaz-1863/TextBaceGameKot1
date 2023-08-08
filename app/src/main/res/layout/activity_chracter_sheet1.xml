@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+    android:background="@drawable/basic_info_bg"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:layout_weight="1"
+        android:background="#59000000"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:weightSum="12">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Player basic information"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Character Name"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Class"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Background"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Race"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Alignment"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Age"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Height"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Weight"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Hair Color"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#5900E2FF"
+            android:gravity="center"
+            android:text="Eyes Color"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/submit_n_continue"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#008EFF"
+            android:text="Submit and Continue"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:layout_weight="1"
+        android:background="#59000000"
+        android:orientation="vertical"
+        android:padding="1dp"
+        android:weightSum="12">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:text="Write in this column"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/character_name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Character Name"
+            android:imeOptions="actionNext"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusForward="@+id/class_edit_text"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/class_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Class"
+            android:imeOptions="actionNext"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusForward="@+id/background_edit_text"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/background_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Background"
+            android:imeOptions="actionNext"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusForward="@+id/race_edit_text"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/race_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Race"
+            android:imeOptions="actionNext"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusForward="@+id/alignment_edit_text"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/alignment_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Alignment"
+            android:imeOptions="actionNext"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusForward="@+id/age_edit_text"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/age_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Age"
+            android:imeOptions="actionNext"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusForward="@+id/height_edit_text"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/height_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Height"
+            android:imeOptions="actionNext"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusForward="@+id/weight_edit_text"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/weight_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Weight"
+            android:imeOptions="actionNext"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusForward="@+id/hair_color_edit_text"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/hair_color_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Hair Color"
+            android:imeOptions="actionNext"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:nextFocusForward="@+id/eyes_color_edit_text"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/eyes_color_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="#59FFC107"
+            android:gravity="center"
+            android:hint="Eyes Color"
+            android:imeOptions="actionDone"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:minLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/white"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+
+        <Button
+            android:id="@+id/clear_all_fields"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E18600"
+            android:text="Clear All Fields"
+            android:textAllCaps="false"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
